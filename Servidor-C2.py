@@ -10,8 +10,8 @@ from datetime import datetime
 import platform
 
 # C2 Server Configuration
-HOST = "88.198.163.195"
-PORT = 1337
+HOST = "TU-IP"
+PORT = TU-PUERTO
 clients = {}
 client_sockets = {}
 client_id_counter = 1
