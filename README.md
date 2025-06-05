@@ -327,26 +327,6 @@ def cleanup_on_exit():
 
 ---
 
-## 👥 TEAM & CONTACTO
-
-### Core Development Team
-- **Lead Developer**: The-White-Hat
-- **Security Research**: [REDACTED]
-- **Infrastructure**: [REDACTED]
-
-### 🤝 Colaboración
-
-```bash
-# Solo pentesters verificados
-gpg --encrypt --recipient team@elite.hack contribution.patch
-```
-
-### 📞 Soporte Profesional
-
-- **IRC**: #breakpong-elite @ irc.hackint.org (SSL 6697)
-- **Matrix**: @breakpong:matrix.hack.org
-- **Sesiones privadas**: Contactar en conferencias de seguridad
-
 ---
 
 ## ⚖️ DISCLAIMER LEGAL
@@ -374,6 +354,6 @@ Los desarrolladores NO asumen responsabilidad por el mal uso.
 "In code we trust, in shadows we operate"
 ```
 
-**© 2024 Elite Red Team - Todos los derechos reservados**
+**© 2025 Elite Red Team - Todos los derechos reservados**
 
 </div>
