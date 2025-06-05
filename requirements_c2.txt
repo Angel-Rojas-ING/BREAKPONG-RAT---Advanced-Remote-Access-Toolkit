@@ -1,0 +1,38 @@
+# BreakPong C2 Server Requirements
+# Python 3.7+ Required
+# Last Updated: 2024
+
+# === CORE DEPENDENCIES ===
+# El servidor C2 está diseñado para ser minimalista
+# Solo usa librerías estándar de Python para máxima portabilidad
+
+# === OPCIONAL - ENHANCED FEATURES ===
+colorama==0.4.6            # Mejor soporte de colores ANSI en Windows
+readline==6.2.4.1          # Autocompletado mejorado (ya incluido en Linux)
+
+# === MONITORING & LOGGING ===
+# Para deployment en producción
+psutil==5.9.8              # Monitoreo de recursos del servidor
+python-daemon==3.0.1       # Ejecutar como daemon en Linux
+
+# === NETWORKING ENHANCEMENTS ===
+# Para características avanzadas
+socks==0                   # SOCKS proxy support
+pycryptodome==3.20.0      # Encriptación de comunicaciones (futuro)
+
+# === WEB INTERFACE (FUTURO) ===
+# flask==3.0.0             # Web GUI para C2
+# flask-socketio==5.3.5    # Real-time updates
+# flask-login==0.6.3       # Autenticación
+
+# === DESARROLLO ===
+pylint==3.0.3              # Code quality
+black==24.1.1              # Code formatting
+mypy==1.8.0                # Type checking
+
+# === INSTALACIÓN MÍNIMA ===
+# El C2 puede ejecutarse sin dependencias externas:
+#   python c2_server_fixed.py
+#
+# Para características completas:
+#   pip install -r requirements_c2.txt
